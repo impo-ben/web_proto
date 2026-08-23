@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ProtoLeap Innovations | Robotics, AI, IoT & Technology Solutions</title>
+<meta name="description" content="ProtoLeap Innovations LLP develops robotics, embedded systems, IoT, AI, electronics, PCB designs, 3D prototypes and technology solutions.">
+<link rel="icon" type="image/png" href="assets/branding/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ CUSTOM CURSOR ============ -->
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+
+<!-- ============ LOADING SCREEN ============ -->
+<div class="loader" id="loader">
+  <div class="loader-inner">
+    <img src="assets/branding/logo.svg" alt="ProtoLeap Innovations" class="loader-logo" onerror="this.style.display='none'">
+    <div class="loader-word">PROTOLEAP INNOVATIONS</div>
+    <div class="loader-tag">FROM PROTOTYPE TO REALITY</div>
+    <div class="loader-bar"><span></span></div>
+  </div>
+</div>
+
+<!-- ============ SKIP LINK ============ -->
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo" aria-label="ProtoLeap Innovations — Home">
+      <img src="assets/branding/logo.svg" alt="ProtoLeap Innovations" onerror="this.style.display='none'">
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#home" class="nav-link active" data-nav>HOME</a>
+      <a href="#services" class="nav-link" data-nav>SERVICES</a>
+      <a href="#products" class="nav-link" data-nav>PRODUCTS</a>
+      <a href="#gallery" class="nav-link" data-nav>GALLERY</a>
+      <a href="#contact" class="nav-link" data-nav>CONTACT</a>
+    </nav>
+    <a href="#contact" class="btn btn-primary btn-nav magnetic">START A PROJECT</a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ MOBILE NAV ============ -->
+<div class="mobile-nav" id="mobileNav">
+  <nav aria-label="Mobile Primary">
+    <a href="#home" data-mobile-nav>HOME</a>
+    <a href="#services" data-mobile-nav>SERVICES</a>
+    <a href="#products" data-mobile-nav>PRODUCTS</a>
+    <a href="#gallery" data-mobile-nav>GALLERY</a>
+    <a href="#contact" data-mobile-nav>CONTACT</a>
+  </nav>
+  <a href="#contact" class="btn btn-primary" data-mobile-nav>START A PROJECT</a>
+</div>
+
+<main id="main">
+
+<!-- ============ 01 HOME ============ -->
+<section class="hero" id="home">
+  <div class="hero-grid-bg" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="hero-brand reveal-up"><span class="brand-mark">PL</span><span>PROTOLEAP INNOVATIONS</span></div>
+    <p class="hero-label reveal-up"><span class="section-num">00</span> ROBOTICS &bull; AI &bull; IoT &bull; EMBEDDED &bull; PROTOTYPING</p>
+    <h1 class="hero-headline">
+      <span class="line reveal-clip">FROM PROTOTYPE</span>
+      <span class="line reveal-clip accent-text">TO REALITY.</span>
+    </h1>
+    <p class="hero-sub reveal-up">Engineering intelligent systems, robotics, embedded technology and innovative prototypes for the real world.</p>
+    <div class="hero-cta reveal-up">
+      <a href="#contact" class="btn btn-primary magnetic">START A PROJECT <span class="arrow">&rarr;</span></a>
+      <a href="#gallery" class="btn btn-ghost magnetic">EXPLORE OUR WORK <span class="arrow">&rarr;</span></a>
+    </div>
+  </div>
+  <div class="hero-tech-strip reveal-up" aria-label="Core capabilities">
+    <span>ROBOTICS</span><i></i><span>EMBEDDED</span><i></i><span>IoT</span><i></i><span>AI</span><i></i><span>PCB</span><i></i><span>3D</span>
+  </div>
+
+  <div class="hero-visual" aria-hidden="true">
+    <svg viewBox="0 0 600 600" class="hero-arm">
+      <g class="arm-node" style="--d:0">
+        <circle cx="120" cy="480" r="10" class="node-fill"/>
+      </g>
+      <line x1="120" y1="480" x2="220" y2="380" class="arm-line"/>
+      <circle cx="220" cy="380" r="9" class="node-fill"/>
+      <line x1="220" y1="380" x2="260" y2="240" class="arm-line"/>
+      <circle cx="260" cy="240" r="9" class="node-fill"/>
+      <line x1="260" y1="240" x2="380" y2="180" class="arm-line"/>
+      <circle cx="380" cy="180" r="12" class="node-outline"/>
+      <line x1="380" y1="180" x2="470" y2="150" class="arm-line"/>
+      <circle cx="470" cy="150" r="7" class="node-fill"/>
+      <circle cx="120" cy="480" r="60" class="orbit-ring"/>
+      <circle cx="380" cy="180" r="90" class="orbit-ring orbit-ring-2"/>
+    </svg>
+  </div>
+
+  <div class="tile-field" aria-hidden="true">
+    <div class="tech-tile" data-depth="0.6" style="--x:6%; --y:18%;"><span class="tile-icon">◈</span>ROBOTICS</div>
+    <div class="tech-tile" data-depth="0.3" style="--x:80%; --y:12%;"><span class="tile-icon">◆</span>AI</div>
+    <div class="tech-tile" data-depth="0.5" style="--x:88%; --y:48%;"><span class="tile-icon">◉</span>IoT</div>
+    <div class="tech-tile" data-depth="0.4" style="--x:4%; --y:58%;"><span class="tile-icon">▣</span>EMBEDDED</div>
+    <div class="tech-tile" data-depth="0.7" style="--x:14%; --y:84%;"><span class="tile-icon">▤</span>PCB</div>
+    <div class="tech-tile" data-depth="0.35" style="--x:68%; --y:82%;"><span class="tile-icon">⟡</span>AUTOMATION</div>
+    <div class="tech-tile" data-depth="0.45" style="--x:38%; --y:14%;"><span class="tile-icon">✦</span>PROTOTYPING</div>
+
+    <figure class="hero-photo-card" data-depth="0.5" style="--x:78%; --y:64%;">
+      <img src="assets/branding/hero-tech.svg" alt="Industrial robotic arm in a prototyping lab" loading="eager">
+      <figcaption><span class="dot"></span>PROTOTYPING IN PROGRESS</figcaption>
+    </figure>
+  </div>
+
+  <div class="scroll-cue" aria-hidden="true"><span></span>SCROLL</div>
+</section>
+
+<!-- ============ TECH MARQUEE DIVIDER ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>ROBOTICS</span><span>&#9670;</span><span>EMBEDDED SYSTEMS</span><span>&#9670;</span><span>IoT</span><span>&#9670;</span><span>ARTIFICIAL INTELLIGENCE</span><span>&#9670;</span><span>PCB DESIGN</span><span>&#9670;</span><span>3D PROTOTYPING</span><span>&#9670;</span><span>AUTOMATION</span><span>&#9670;</span>
+    <span>ROBOTICS</span><span>&#9670;</span><span>EMBEDDED SYSTEMS</span><span>&#9670;</span><span>IoT</span><span>&#9670;</span><span>ARTIFICIAL INTELLIGENCE</span><span>&#9670;</span><span>PCB DESIGN</span><span>&#9670;</span><span>3D PROTOTYPING</span><span>&#9670;</span><span>AUTOMATION</span><span>&#9670;</span>
+  </div>
+</div>
+
+<!-- ============ BRAND STATEMENT ============ -->
+<section class="statement">
+  <div class="statement-inner">
+    <p class="eyebrow reveal-up"><span class="section-num">01</span> OUR APPROACH</p>
+    <h2 class="statement-head">
+      <span class="reveal-clip">IDEAS ARE ONLY</span>
+      <span class="reveal-clip accent-text">THE BEGINNING.</span>
+    </h2>
+    <p class="statement-lead reveal-up">We engineer the technology that brings them to life.</p>
+    <p class="statement-body reveal-up">ProtoLeap brings together electronics, embedded systems, robotics, IoT, AI and prototyping to transform concepts into practical technology. From learning and experimentation to engineering and prototyping, we provide a platform for turning concepts into practical technology — for students, engineers, institutions, startups and technology enthusiasts alike.</p>
+  </div>
+</section>
+
+<!-- ============ TECHNOLOGY TILE GRID ============ -->
+<section class="tech-grid-section">
+  <div class="section-head">
+    <p class="eyebrow reveal-up"><span class="section-num">02</span> WHAT WE WORK WITH</p>
+    <h2 class="reveal-clip">CORE TECHNOLOGY DOMAINS.</h2>
+  </div>
+
+  <div class="tech-grid">
+    <article class="grid-tile tile-robotics reveal-up" data-tilt>
+      <span class="grid-tile-num">01</span>
+      <span class="grid-tile-icon">◈</span>
+      <h3>ROBOTICS</h3>
+      <p>Robotic systems, autonomous platforms and automation.</p>
+      <span class="grid-tile-arrow">&rarr;</span>
+    </article>
+    <article class="grid-tile tile-ai reveal-up" data-tilt>
+      <span class="grid-tile-num">02</span>
+      <span class="grid-tile-icon">◆</span>
+      <h3>AI &amp; ML</h3>
+      <p>Intelligent systems, computer vision and AI-integrated hardware.</p>
+      <span class="grid-tile-arrow">&rarr;</span>
+    </article>
+    <article class="grid-tile tile-embedded reveal-up" data-tilt>
+      <span class="grid-tile-num">03</span>
+      <span class="grid-tile-icon">▣</span>
+      <h3>EMBEDDED SYSTEMS</h3>
+      <p>Microcontrollers, sensors, actuators and firmware.</p>
+      <span class="grid-tile-arrow">&rarr;</span>
+    </article>
+    <article class="grid-tile tile-iot reveal-up" data-tilt>
+      <span class="grid-tile-num">04</span>
+      <span class="grid-tile-icon">◉</span>
+      <h3>IoT</h3>
+      <p>Connected devices, smart monitoring and automation.</p>
+      <span class="grid-tile-arrow">&rarr;</span>
+    </article>
+    <article class="grid-tile tile-electronics reveal-up" data-tilt>
+      <span class="grid-tile-num">05</span>
+      <span class="grid-tile-icon">⟡</span>
+      <h3>ELECTRONICS</h3>
+      <p>Circuit development, interfacing and hardware integration.</p>
+      <span class="grid-tile-arrow">&rarr;</span>
+    </article>
+    <article class="grid-tile tile-pcb reveal-up" data-tilt>
+      <span class="grid-tile-num">06</span>
+      <span class="grid-tile-icon">▤</span>
+      <h3>PCB DESIGN</h3>
+      <p>Schematic development, PCB layout and hardware development.</p>
+      <span class="grid-tile-arrow">&rarr;</span>
+    </article>
+    <article class="grid-tile tile-3d reveal-up" data-tilt>
+      <span class="grid-tile-num">07</span>
+      <span class="grid-tile-icon">◎</span>
+      <h3>3D DESIGN</h3>
+      <p>CAD modelling, mechanical design and prototype components.</p>
+      <span class="grid-tile-arrow">&rarr;</span>
+    </article>
+    <article class="grid-tile tile-proto reveal-up" data-tilt>
+      <span class="grid-tile-num">08</span>
+      <span class="grid-tile-icon">✦</span>
+      <h3>PROTOTYPING</h3>
+      <p>Concept development and functional prototype creation.</p>
+      <span class="grid-tile-arrow">&rarr;</span>
+    </article>
+  </div>
+</section>
+
+<!-- ============ DEVELOPMENT PHILOSOPHY ============ -->
+<section class="philosophy">
+  <div class="philosophy-inner">
+    <div class="philosophy-stage reveal-up">
+      <span class="philosophy-word">LEARN</span>
+      <p>Understand technology through practical learning.</p>
+    </div>
+    <span class="philosophy-arrow" aria-hidden="true">&rarr;</span>
+    <div class="philosophy-stage reveal-up">
+      <span class="philosophy-word">BUILD</span>
+      <p>Apply concepts through real hardware and software.</p>
+    </div>
+    <span class="philosophy-arrow" aria-hidden="true">&rarr;</span>
+    <div class="philosophy-stage reveal-up">
+      <span class="philosophy-word">PROTOTYPE</span>
+      <p>Transform ideas into functional systems.</p>
+    </div>
+    <span class="philosophy-arrow" aria-hidden="true">&rarr;</span>
+    <div class="philosophy-stage reveal-up">
+      <span class="philosophy-word accent-text">INNOVATE</span>
+      <p>Improve and develop solutions for real-world applications.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 SERVICES ============ -->
+<section class="services" id="services">
+  <div class="section-head">
+    <p class="eyebrow reveal-up"><span class="section-num">03</span> WHAT WE BUILD</p>
+    <h2 class="reveal-clip">BUILT FOR<br>REAL-WORLD TECHNOLOGY.</h2>
+    <p class="section-sub reveal-up">From technical learning to functional prototypes, ProtoLeap brings engineering, innovation and practical development together.</p>
+  </div>
+
+  <div class="service-list">
+
+    <article class="service-card reveal-up">
+      <div class="service-card-bg sbg-robotics" aria-hidden="true"><img src="assets/services/robotics.svg" alt="" loading="lazy"></div>
+      <span class="service-num">01</span>
+      <div class="service-body">
+        <h3>ROBOTICS &amp; AUTOMATION</h3>
+        <p>Design and development of robotic and automated systems ranging from educational platforms to custom prototypes.</p>
+        <div class="tag-row">
+          <span class="tag">Robotics</span><span class="tag">Automation</span><span class="tag">Autonomous Systems</span><span class="tag">Control Systems</span>
+        </div>
+      </div>
+      <span class="service-arrow">&rarr;</span>
+    </article>
+
+    <article class="service-card reveal-up">
+      <div class="service-card-bg sbg-embedded" aria-hidden="true"></div>
+      <span class="service-num">02</span>
+      <div class="service-body">
+        <h3>EMBEDDED SYSTEMS</h3>
+        <p>Development of intelligent hardware systems using microcontrollers, sensors, actuators and embedded technologies.</p>
+        <div class="tag-row">
+          <span class="tag">Microcontrollers</span><span class="tag">Sensors</span><span class="tag">Actuators</span><span class="tag">Firmware</span>
+        </div>
+      </div>
+      <span class="service-arrow">&rarr;</span>
+    </article>
+
+    <article class="service-card reveal-up">
+      <div class="service-card-bg sbg-iot" aria-hidden="true"></div>
+      <span class="service-num">03</span>
+      <div class="service-body">
+        <h3>IoT SOLUTIONS</h3>
+        <p>Connected hardware systems for monitoring, automation, data collection and real-time applications.</p>
+        <div class="tag-row">
+          <span class="tag">Connected Devices</span><span class="tag">Monitoring</span><span class="tag">Smart Systems</span><span class="tag">Data</span>
+        </div>
+      </div>
+      <span class="service-arrow">&rarr;</span>
+    </article>
+
+    <article class="service-card reveal-up">
+      <div class="service-card-bg sbg-ai" aria-hidden="true"></div>
+      <span class="service-num">04</span>
+      <div class="service-body">
+        <h3>AI + HARDWARE</h3>
+        <p>Combining artificial intelligence with physical systems to create intelligent technology solutions.</p>
+        <div class="tag-row">
+          <span class="tag">Computer Vision</span><span class="tag">AI/ML</span><span class="tag">Edge AI</span><span class="tag">Intelligent Systems</span>
+        </div>
+      </div>
+      <span class="service-arrow">&rarr;</span>
+    </article>
+
+    <article class="service-card reveal-up">
+      <div class="service-card-bg sbg-pcb" aria-hidden="true"><img src="assets/services/embedded.svg" alt="" loading="lazy"></div>
+      <span class="service-num">05</span>
+      <div class="service-body">
+        <h3>PCB DESIGN</h3>
+        <p>From circuit concepts to professional PCB layouts and hardware-ready designs.</p>
+        <div class="tag-row">
+          <span class="tag">Schematic</span><span class="tag">PCB Layout</span><span class="tag">Hardware</span><span class="tag">Prototyping</span>
+        </div>
+      </div>
+      <span class="service-arrow">&rarr;</span>
+    </article>
+
+    <article class="service-card reveal-up">
+      <div class="service-card-bg sbg-3d" aria-hidden="true"><img src="assets/services/iot.svg" alt="" loading="lazy"></div>
+      <span class="service-num">06</span>
+      <div class="service-body">
+        <h3>3D DESIGN &amp; PRINTING</h3>
+        <p>Creating custom mechanical designs, enclosures, components and functional prototype parts.</p>
+        <div class="tag-row">
+          <span class="tag">CAD</span><span class="tag">3D Printing</span><span class="tag">Mechanical Design</span><span class="tag">Prototype Parts</span>
+        </div>
+      </div>
+      <span class="service-arrow">&rarr;</span>
+    </article>
+
+    <article class="service-card reveal-up">
+      <div class="service-card-bg sbg-project" aria-hidden="true"></div>
+      <span class="service-num">07</span>
+      <div class="service-body">
+        <h3>PROJECT DEVELOPMENT</h3>
+        <p>Technical development support for academic, engineering, research and innovation projects.</p>
+        <div class="tag-row">
+          <span class="tag">School Projects</span><span class="tag">Diploma Projects</span><span class="tag">B.Tech Projects</span><span class="tag">Final-Year Projects</span><span class="tag">Research Prototypes</span>
+        </div>
+      </div>
+      <span class="service-arrow">&rarr;</span>
+    </article>
+
+    <article class="service-card reveal-up">
+      <div class="service-card-bg sbg-training" aria-hidden="true"><img src="assets/services/ai.svg" alt="" loading="lazy"></div>
+      <span class="service-num">08</span>
+      <div class="service-body">
+        <h3>TRAINING &amp; INTERNSHIPS</h3>
+        <p>Hands-on technical programs focused on robotics, embedded systems, IoT, AI, electronics and practical project development.</p>
+        <div class="tag-row">
+          <span class="tag">Technical Training</span><span class="tag">Internships</span><span class="tag">Workshops</span><span class="tag">Robotics Programs</span>
+        </div>
+      </div>
+      <span class="service-arrow">&rarr;</span>
+    </article>
+
+    <article class="service-card reveal-up">
+      <div class="service-card-bg sbg-workshop" aria-hidden="true"></div>
+      <span class="service-num">09</span>
+      <div class="service-body">
+        <h3>WORKSHOPS &amp; EVENTS</h3>
+        <p>Technology workshops, robotics demonstrations, exhibitions, competitions and technical events for educational institutions and organizations.</p>
+        <div class="tag-row">
+          <span class="tag">Workshops</span><span class="tag">Demonstrations</span><span class="tag">Exhibitions</span><span class="tag">Competitions</span>
+        </div>
+      </div>
+      <span class="service-arrow">&rarr;</span>
+    </article>
+
+    <article class="service-card reveal-up">
+      <div class="service-card-bg sbg-custom" aria-hidden="true"></div>
+      <span class="service-num">10</span>
+      <div class="service-body">
+        <h3>CUSTOM PROTOTYPE DEVELOPMENT</h3>
+        <p>Transforming concepts into functional prototypes through hardware, software, mechanical design and system integration.</p>
+        <div class="tag-row">
+          <span class="tag">Hardware</span><span class="tag">Software</span><span class="tag">Mechanical Design</span><span class="tag">System Integration</span>
+        </div>
+      </div>
+      <span class="service-arrow">&rarr;</span>
+    </article>
+
+  </div>
+
+  <!-- PROCESS TIMELINE -->
+  <div class="process">
+    <p class="eyebrow reveal-up"><span class="section-num">04</span> HOW WE WORK</p>
+    <div class="process-line-wrap" aria-hidden="true"><div class="process-line" id="processLine"></div></div>
+    <div class="process-steps">
+      <div class="process-step reveal-up"><span class="pstep-num">01</span><h4>IDEA</h4><p>Understand the concept and requirements.</p></div>
+      <div class="process-step reveal-up"><span class="pstep-num">02</span><h4>DESIGN</h4><p>Develop the architecture and design.</p></div>
+      <div class="process-step reveal-up"><span class="pstep-num">03</span><h4>BUILD</h4><p>Develop hardware and software.</p></div>
+      <div class="process-step reveal-up"><span class="pstep-num">04</span><h4>TEST</h4><p>Validate functionality and performance.</p></div>
+      <div class="process-step reveal-up"><span class="pstep-num">05</span><h4>REFINE</h4><p>Optimize the system.</p></div>
+      <div class="process-step reveal-up"><span class="pstep-num">06</span><h4>REALITY</h4><p>Deliver a functional prototype or solution.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRODUCTS ============ -->
+<section class="products" id="products">
+  <div class="section-head">
+    <p class="eyebrow reveal-up"><span class="section-num">05</span> WHAT WE OFFER</p>
+    <h2 class="reveal-clip">TAKE SOMETHING<br>TANGIBLE HOME.</h2>
+    <p class="section-sub reveal-up">Beyond custom development, ProtoLeap offers standing product lines — ready to learn from, build on or integrate directly into your own designs.</p>
+  </div>
+
+  <div class="product-grid">
+
+    <article class="product-card size-lg reveal-up" data-product="robotics" tabindex="0">
+      <div class="product-img">
+        <img src="assets/products/robotics-kit.svg" alt="Robotics learning kit — robotic arm on a display platform" loading="lazy">
+      </div>
+      <div class="product-body">
+        <span class="product-num">01</span>
+        <h3>ROBOTICS LEARNING KITS</h3>
+        <p>Modular robotics kits built for hands-on learning — from first builds to advanced autonomous platforms.</p>
+        <div class="product-actions">
+          <button class="btn btn-primary btn-sm magnetic" data-open-product>VIEW 4 KITS <span class="arrow">&rarr;</span></button>
+          <button class="btn btn-ghost btn-sm magnetic" data-quote="Robotics">REQUEST QUOTE</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card reveal-up" data-product="iot" tabindex="0">
+      <div class="product-img">
+        <img src="assets/products/iot-board.svg" alt="IoT starter board — connected circuit board" loading="lazy">
+      </div>
+      <div class="product-body">
+        <span class="product-num">02</span>
+        <h3>IoT STARTER BOARDS</h3>
+        <p>Sensor-ready development boards for building and testing connected, real-time systems.</p>
+        <div class="product-actions">
+          <button class="btn btn-primary btn-sm magnetic" data-open-product>VIEW 3 BOARDS <span class="arrow">&rarr;</span></button>
+          <button class="btn btn-ghost btn-sm magnetic" data-quote="IoT">REQUEST QUOTE</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card reveal-up" data-product="pcb" tabindex="0">
+      <div class="product-img">
+        <img src="assets/products/pcb-module.svg" alt="Custom PCB module — macro circuit board detail" loading="lazy">
+      </div>
+      <div class="product-body">
+        <span class="product-num">03</span>
+        <h3>CUSTOM PCB MODULES</h3>
+        <p>Application-ready circuit boards, designed and fabricated for your specific project requirements.</p>
+        <div class="product-actions">
+          <button class="btn btn-primary btn-sm magnetic" data-open-product>VIEW 4 MODULES <span class="arrow">&rarr;</span></button>
+          <button class="btn btn-ghost btn-sm magnetic" data-quote="PCB Design">REQUEST QUOTE</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card size-lg reveal-up" data-product="3d" tabindex="0">
+      <div class="product-img">
+        <img src="assets/products/3d-component.svg" alt="3D printed component set — 3D printer at work" loading="lazy">
+      </div>
+      <div class="product-body">
+        <span class="product-num">04</span>
+        <h3>3D PRINTED COMPONENT SETS</h3>
+        <p>Mechanical parts, enclosures and fixtures produced to fit directly into your prototype or product build.</p>
+        <div class="product-actions">
+          <button class="btn btn-primary btn-sm magnetic" data-open-product>VIEW 4 SETS <span class="arrow">&rarr;</span></button>
+          <button class="btn btn-ghost btn-sm magnetic" data-quote="3D Design">REQUEST QUOTE</button>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ 03 GALLERY ============ -->
+<section class="gallery" id="gallery">
+  <div class="section-head">
+    <p class="eyebrow reveal-up"><span class="section-num">06</span> OUR WORK</p>
+    <h2 class="reveal-clip">BUILT. TESTED.<br>REFINED.</h2>
+    <p class="section-sub reveal-up">A visual glimpse into our world of robotics, electronics, prototyping and technology development.</p>
+  </div>
+
+  <div class="gallery-filters reveal-up" role="tablist" aria-label="Gallery filters">
+    <button class="filter-btn active" data-filter="all">ALL</button>
+    <button class="filter-btn" data-filter="robotics">ROBOTICS</button>
+    <button class="filter-btn" data-filter="electronics">ELECTRONICS</button>
+    <button class="filter-btn" data-filter="iot">IoT</button>
+    <button class="filter-btn" data-filter="ai">AI</button>
+    <button class="filter-btn" data-filter="prototypes">PROTOTYPES</button>
+    <button class="filter-btn" data-filter="3d">3D DESIGN</button>
+  </div>
+
+  <div class="gallery-grid" id="galleryGrid">
+    <!-- populated with figure.gallery-item elements below -->
+
+    <figure class="gallery-item size-lg" data-cat="robotics" tabindex="0" data-title="Agriculture Rover" data-category="Robotics" data-desc="An autonomous ground platform prototype built to explore terrain navigation and field-monitoring concepts for agricultural use cases.">
+      <div class="gallery-visual gv-robotics-1"><img src="assets/gallery/robotics-01.svg" alt="Agriculture Rover prototype" loading="lazy" onerror="this.onerror=null;this.src='assets/products/robotics-kit.svg'"></div>
+      <figcaption><span class="gi-title">AGRICULTURE ROVER</span><span class="gi-cat">Robotics</span></figcaption>
+      <span class="gi-arrow">&rarr;</span>
+    </figure>
+
+    <figure class="gallery-item size-tall" data-cat="iot" tabindex="0" data-title="Smart Irrigation System" data-category="IoT / Automation" data-desc="A connected irrigation prototype combining soil sensors and automated valve control for water-efficient field management.">
+      <div class="gallery-visual gv-iot-1"><img src="assets/gallery/iot-01.svg" alt="Smart Irrigation System prototype" loading="lazy" onerror="this.onerror=null;this.src='assets/products/iot-board.svg'"></div>
+      <figcaption><span class="gi-title">SMART IRRIGATION SYSTEM</span><span class="gi-cat">IoT / Automation</span></figcaption>
+      <span class="gi-arrow">&rarr;</span>
+    </figure>
+
+    <figure class="gallery-item size-sq" data-cat="iot" tabindex="0" data-title="Flood Monitoring System" data-category="IoT" data-desc="A water-level sensing and alert prototype designed to demonstrate real-time environmental monitoring over a connected network.">
+      <div class="gallery-visual gv-iot-2"><img src="assets/gallery/iot-02.svg" alt="Flood Monitoring System prototype" loading="lazy" onerror="this.onerror=null;this.src='assets/illustrations/iot.svg'"></div>
+      <figcaption><span class="gi-title">FLOOD MONITORING SYSTEM</span><span class="gi-cat">IoT</span></figcaption>
+      <span class="gi-arrow">&rarr;</span>
+    </figure>
+
+    <figure class="gallery-item size-wide" data-cat="robotics" tabindex="0" data-title="Surveillance Robot" data-category="Robotics / Embedded" data-desc="A remotely operated embedded platform prototype exploring camera integration, wireless control and obstacle-aware movement.">
+      <div class="gallery-visual gv-robotics-2"><img src="assets/gallery/robotics-02.svg" alt="Surveillance Robot prototype" loading="lazy" onerror="this.onerror=null;this.src='assets/illustrations/robotics.svg'"></div>
+      <figcaption><span class="gi-title">SURVEILLANCE ROBOT</span><span class="gi-cat">Robotics / Embedded</span></figcaption>
+      <span class="gi-arrow">&rarr;</span>
+    </figure>
+
+    <figure class="gallery-item size-sq" data-cat="electronics" tabindex="0" data-title="Smart Farm" data-category="IoT / Electronics" data-desc="A multi-sensor electronics prototype for monitoring temperature, humidity and light across a small-scale farming environment.">
+      <div class="gallery-visual gv-electronics-1"><img src="assets/gallery/electronics-01.svg" alt="Smart Farm prototype" loading="lazy" onerror="this.onerror=null;this.src='assets/illustrations/electronics.svg'"></div>
+      <figcaption><span class="gi-title">SMART FARM</span><span class="gi-cat">IoT / Electronics</span></figcaption>
+      <span class="gi-arrow">&rarr;</span>
+    </figure>
+
+    <figure class="gallery-item size-md" data-cat="robotics" tabindex="0" data-title="River Water Cleaning Robot" data-category="Robotics" data-desc="A floating robotic prototype concept aimed at collecting surface debris from small water bodies using a motorized collection mechanism.">
+      <div class="gallery-visual gv-robotics-3"><img src="assets/gallery/robotics-03.svg" alt="River Water Cleaning Robot prototype" loading="lazy" onerror="this.onerror=null;this.src='assets/illustrations/robotics.svg'"></div>
+      <figcaption><span class="gi-title">RIVER WATER CLEANING ROBOT</span><span class="gi-cat">Robotics</span></figcaption>
+      <span class="gi-arrow">&rarr;</span>
+    </figure>
+
+    <figure class="gallery-item size-md" data-cat="iot" tabindex="0" data-title="RFID Smart Attendance" data-category="IoT / RFID" data-desc="A tag-based identification prototype demonstrating automated logging using RFID readers and a lightweight connected interface.">
+      <div class="gallery-visual gv-iot-3"><img src="assets/gallery/iot-03.svg" alt="RFID Smart Attendance prototype" loading="lazy" onerror="this.onerror=null;this.src='assets/illustrations/iot.svg'"></div>
+      <figcaption><span class="gi-title">RFID SMART ATTENDANCE</span><span class="gi-cat">IoT / RFID</span></figcaption>
+      <span class="gi-arrow">&rarr;</span>
+    </figure>
+
+    <figure class="gallery-item size-lg" data-cat="robotics" tabindex="0" data-title="Obstacle Avoidance Robot" data-category="Robotics" data-desc="A sensor-driven mobile robot prototype that detects and navigates around obstacles using ultrasonic sensing and reactive control logic.">
+      <div class="gallery-visual gv-robotics-4"><img src="assets/gallery/robotics-04.svg" alt="Obstacle Avoidance Robot prototype" loading="lazy" onerror="this.onerror=null;this.src='assets/illustrations/robotics.svg'"></div>
+      <figcaption><span class="gi-title">OBSTACLE AVOIDANCE ROBOT</span><span class="gi-cat">Robotics</span></figcaption>
+      <span class="gi-arrow">&rarr;</span>
+    </figure>
+
+    <figure class="gallery-item size-wide" data-cat="3d" tabindex="0" data-title="3D Prototype Components" data-category="3D Design" data-desc="A collection of CAD-modelled and 3D-printed mechanical components developed to support functional prototype assemblies.">
+      <div class="gallery-visual gv-3d-1"><img src="assets/gallery/3d-01.svg" alt="3D Prototype Components" loading="lazy" onerror="this.onerror=null;this.src='assets/products/3d-component.svg'"></div>
+      <figcaption><span class="gi-title">3D PROTOTYPE COMPONENTS</span><span class="gi-cat">3D Design</span></figcaption>
+      <span class="gi-arrow">&rarr;</span>
+    </figure>
+
+    <figure class="gallery-item size-sq" data-cat="ai" tabindex="0" data-title="AI Vision Module" data-category="AI" data-desc="An edge-AI experimentation prototype exploring on-device object recognition paired with lightweight embedded hardware.">
+      <div class="gallery-visual gv-ai-1"><img src="assets/gallery/ai-01.svg" alt="AI Vision Module prototype" loading="lazy" onerror="this.onerror=null;this.src='assets/illustrations/ai.svg'"></div>
+      <figcaption><span class="gi-title">AI VISION MODULE</span><span class="gi-cat">AI</span></figcaption>
+      <span class="gi-arrow">&rarr;</span>
+    </figure>
+
+  </div>
+</section>
+
+<!-- ============ 04 CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="contact-bg" aria-hidden="true"></div>
+  <div class="contact-inner">
+    <div class="contact-left">
+      <p class="eyebrow reveal-up"><span class="section-num">07</span> WHAT WILL WE BUILD NEXT?</p>
+      <h2 class="reveal-clip">LET'S BUILD<br><span class="accent-text">SOMETHING.</span></h2>
+      <p class="contact-lead reveal-up">Have an idea, project or technology requirement? Let's turn it into something real.</p>
+
+      <div class="contact-details reveal-up">
+        <h3>PROTOLEAP INNOVATIONS LLP</h3>
+        <p class="contact-tagline">From Prototype to Reality.</p>
+        <a href="tel:+919747119885" class="contact-line"><span>PHONE</span>97471 19885</a>
+        <a href="mailto:protoleapinnovations@gmail.com" class="contact-line"><span>EMAIL</span>protoleapinnovations@gmail.com</a>
+      </div>
+
+      <div class="social-row reveal-up">
+        <a href="#" aria-label="Instagram" class="social-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20"><rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor"/></svg>
+        </a>
+        <a href="#" aria-label="YouTube" class="social-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20"><rect x="2" y="5" width="20" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10 9L15.5 12L10 15Z" fill="currentColor"/></svg>
+        </a>
+        <a href="#" aria-label="LinkedIn" class="social-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20"><rect x="2" y="2" width="20" height="20" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="7.5" cy="7.5" r="1.3" fill="currentColor"/><line x1="7.5" y1="11" x2="7.5" y2="17" stroke="currentColor" stroke-width="1.7"/><path d="M11 17V11M11 11c0-1.2 1-2 2.4-2 1.7 0 2.6 1 2.6 3v5" stroke="currentColor" stroke-width="1.7" fill="none"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <form class="contact-form reveal-up" id="contactForm" novalidate>
+      <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+      <input type="hidden" name="subject" value="New enquiry from ProtoLeap Innovations website">
+      <input type="text" name="botcheck" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="form-row">
+        <div class="field">
+          <input type="text" id="f-name" name="name" required autocomplete="name" placeholder=" ">
+          <label for="f-name">Name</label>
+          <span class="field-error" data-error-for="f-name"></span>
+        </div>
+        <div class="field">
+          <input type="email" id="f-email" name="email" required autocomplete="email" placeholder=" ">
+          <label for="f-email">Email</label>
+          <span class="field-error" data-error-for="f-email"></span>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="field">
+          <input type="tel" id="f-phone" name="phone" required autocomplete="tel" placeholder=" ">
+          <label for="f-phone">Phone</label>
+          <span class="field-error" data-error-for="f-phone"></span>
+        </div>
+        <div class="field">
+          <input type="text" id="f-org" name="organization" autocomplete="organization" placeholder=" ">
+          <label for="f-org">Organization</label>
+          <span class="field-error" data-error-for="f-org"></span>
+        </div>
+      </div>
+      <div class="field">
+        <select id="f-requirement" name="requirement" required>
+          <option value="" disabled selected hidden></option>
+          <option>Training</option>
+          <option>Internship</option>
+          <option>Project Development</option>
+          <option>Robotics</option>
+          <option>Embedded Systems</option>
+          <option>IoT</option>
+          <option>AI/ML</option>
+          <option>PCB Design</option>
+          <option>3D Design</option>
+          <option>Prototype Development</option>
+          <option>Workshop</option>
+          <option>Other</option>
+        </select>
+        <label for="f-requirement" class="select-label">Requirement</label>
+        <span class="field-error" data-error-for="f-requirement"></span>
+      </div>
+      <div class="field">
+        <textarea id="f-message" name="message" required rows="4" placeholder=" "></textarea>
+        <label for="f-message">Message</label>
+        <span class="field-error" data-error-for="f-message"></span>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block magnetic">SEND ENQUIRY <span class="arrow">&rarr;</span></button>
+      <p class="form-success" id="formSuccess" role="status" aria-live="polite">Your enquiry has been noted. We'll get back to you shortly.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ GALLERY MODAL ============ -->
+<div class="modal" id="galleryModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-backdrop" data-modal-close></div>
+  <div class="modal-content">
+    <button class="modal-close" data-modal-close aria-label="Close">&times;</button>
+    <div class="modal-visual" id="modalVisual"></div>
+    <div class="modal-info">
+      <span class="gi-cat" id="modalCategory"></span>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+    </div>
+  </div>
+</div>
+
+<!-- ============ PRODUCT DETAIL MODAL ============ -->
+<div class="modal product-modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="prodModalTitle">
+  <div class="modal-backdrop" data-modal-close></div>
+  <div class="modal-content product-modal-content">
+    <button class="modal-close" data-modal-close aria-label="Close">&times;</button>
+    <div class="product-modal-header">
+      <img id="prodModalIcon" class="product-modal-icon" src="" alt="">
+      <div>
+        <span class="eyebrow" id="prodModalEyebrow"></span>
+        <h3 id="prodModalTitle"></h3>
+        <p id="prodModalDesc"></p>
+      </div>
+    </div>
+    <div class="product-tiles" id="prodModalTiles"></div>
+  </div>
+</div>
+
+<!-- ============ CHATBOT ============ -->
+<div class="chatbot" id="chatbot">
+  <div class="chat-panel" id="chatPanel" role="dialog" aria-modal="false" aria-label="ProtoLeap Assistant chat">
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <span class="chat-avatar">P</span>
+        <div>
+          <strong>ProtoLeap Assistant</strong>
+          <span class="chat-status"><span class="status-dot"></span>Usually replies instantly</span>
+        </div>
+      </div>
+      <button class="chat-close" id="chatClose" aria-label="Close chat">&times;</button>
+    </div>
+    <div class="chat-body" id="chatBody"></div>
+    <div class="chat-quick" id="chatQuick"></div>
+    <form class="chat-input-row" id="chatForm">
+      <input type="text" id="chatInput" placeholder="Type a message..." autocomplete="off" aria-label="Type a message">
+      <button type="submit" aria-label="Send">
+        <svg viewBox="0 0 24 24" width="18" height="18"><path d="M3 11l18-8-8 18-2-8-8-2z" fill="currentColor"/></svg>
+      </button>
+    </form>
+  </div>
+  <button class="chat-toggle" id="chatToggle" aria-label="Open chat" aria-expanded="false">
+    <span class="chat-toggle-icon"></span>
+    <span class="chat-badge" id="chatBadge">1</span>
+  </button>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="assets/branding/logo.svg" alt="ProtoLeap Innovations" class="footer-logo" onerror="this.style.display='none'">
+      <p>PROTOLEAP INNOVATIONS LLP</p>
+      <p class="footer-tag">FROM PROTOTYPE TO REALITY.</p>
+    </div>
+    <div class="footer-col">
+      <h4>NAVIGATION</h4>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#products">Products</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>TECHNOLOGY</h4>
+      <a href="#services">Robotics</a>
+      <a href="#services">Embedded</a>
+      <a href="#services">IoT</a>
+      <a href="#services">AI</a>
+      <a href="#services">PCB</a>
+      <a href="#services">3D Design</a>
+    </div>
+    <div class="footer-col">
+      <h4>CONTACT</h4>
+      <a href="tel:+919747119885">97471 19885</a>
+      <a href="mailto:protoleapinnovations@gmail.com">protoleapinnovations@gmail.com</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="copyYear">2026</span> ProtoLeap Innovations LLP. All rights reserved.</p>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">&uarr;</button>
+  </div>
+</footer>
+
+<!-- ============ SECTION PROGRESS RAIL ============ -->
+<nav class="rail" aria-label="Page section progress">
+  <div class="rail-line"><span class="rail-fill" id="railFill"></span></div>
+  <a href="#home" class="rail-dot active" data-rail data-target="home"><span class="rail-node"></span><span class="rail-label">Home</span></a>
+  <a href="#services" class="rail-dot" data-rail data-target="services"><span class="rail-node"></span><span class="rail-label">Services</span></a>
+  <a href="#products" class="rail-dot" data-rail data-target="products"><span class="rail-node"></span><span class="rail-label">Products</span></a>
+  <a href="#gallery" class="rail-dot" data-rail data-target="gallery"><span class="rail-node"></span><span class="rail-label">Gallery</span></a>
+  <a href="#contact" class="rail-dot" data-rail data-target="contact"><span class="rail-node"></span><span class="rail-label">Contact</span></a>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 150">
+  <rect width="720" height="150" rx="28" fill="#07090c"/>
+  <g transform="translate(28 24)">
+    <path d="M38 72C38 42 58 20 87 20h42c25 0 43 14 48 34h-39c-4-7-11-11-21-11H90c-13 0-22 10-22 29s9 29 22 29h27c10 0 17-4 21-11h39c-5 20-23 34-48 34H87C58 124 38 102 38 72Z" fill="#f4f6f8"/>
+    <path d="M176 72c0-30 20-52 50-52h44c30 0 50 22 50 52s-20 52-50 52h-44c-30 0-50-22-50-52Zm42 0c0 17 10 29 27 29h7c17 0 27-12 27-29s-10-29-27-29h-7c-17 0-27 12-27 29Z" fill="#2fd6c2"/>
+    <path d="M342 20h40l32 44 32-44h40v104h-40V78l-32 42-32-42v46h-40Z" fill="#f4f6f8"/>
+    <circle cx="528" cy="72" r="48" fill="none" stroke="#2fd6c2" stroke-width="7"/>
+    <path d="M528 42v30l22 15" fill="none" stroke="#f4f6f8" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <text x="410" y="137" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" letter-spacing="4" fill="#6b7480">ENGINEERING • ROBOTICS • IOT • EMBEDDED</text>
+</svg>

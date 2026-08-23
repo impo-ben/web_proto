@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520">
+      <defs>
+        <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#091017"/><stop offset="1" stop-color="#151d27"/>
+        </linearGradient>
+        <radialGradient id="r" cx="72%" cy="28%" r="70%">
+          <stop offset="0" stop-color="#8be28b" stop-opacity=".24"/><stop offset="1" stop-color="#8be28b" stop-opacity="0"/>
+        </radialGradient>
+        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+          <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity=".055"/>
+        </pattern>
+      </defs>
+      <rect width="800" height="520" fill="url(#g)"/>
+      <rect width="800" height="520" fill="url(#r)"/>
+      <rect width="800" height="520" fill="url(#grid)"/>
+      <circle cx="620" cy="110" r="92" fill="none" stroke="#8be28b" stroke-opacity=".22"/>
+      <circle cx="620" cy="110" r="58" fill="none" stroke="#8be28b" stroke-opacity=".35"/>
+      <path d="M85 410H715" stroke="#8be28b" stroke-opacity=".28"/>
+      <path d="M110 380L260 240L390 315L555 170L690 250" fill="none" stroke="#8be28b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <g fill="#8be28b">
+        <circle cx="110" cy="380" r="7"/><circle cx="260" cy="240" r="7"/><circle cx="390" cy="315" r="7"/>
+        <circle cx="555" cy="170" r="7"/><circle cx="690" cy="250" r="7"/>
+      </g>
+      <rect x="300" y="125" width="200" height="120" rx="14" fill="#0d141c" stroke="#8be28b" stroke-opacity=".7"/>
+      <text x="400" y="190" text-anchor="middle" font-family="Arial,sans-serif" font-size="58" fill="#8be28b">▦</text>
+      <text x="55" y="455" font-family="Arial,sans-serif" font-size="28" font-weight="700" fill="#f4f6f8" letter-spacing="2">PCB</text>
+      <text x="55" y="487" font-family="Arial,sans-serif" font-size="15" fill="#aab2bd" letter-spacing="1">PCB design</text>
+    </svg>
