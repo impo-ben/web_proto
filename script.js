@@ -211,73 +211,138 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { threshold:0.3 });
     procIo.observe(processSection);
   }
+/* ---------- 14. GALLERY FILTERING ---------- */
 
-  /* ---------- 14. GALLERY FILTERING ---------- */
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const galleryItems = document.querySelectorAll('.gallery-item');
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const filter = btn.dataset.filter;
-      galleryItems.forEach(item => {
-        const match = filter === 'all' || item.dataset.cat === filter;
-        item.classList.toggle('filtered-out', !match);
-      });
+const filterBtns = document.querySelectorAll('.filter-btn');
+const galleryItems = document.querySelectorAll('.gallery-item');
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => {
+      b.classList.remove('active');
+    });
+    btn.classList.add('active');
+    const filter = btn.dataset.filter;
+    galleryItems.forEach(item => {
+      const categories = (item.dataset.cat || '')
+        .trim()
+        .split(/\s+/);
+      const match =
+        filter === 'all' ||
+        categories.includes(filter);
+      item.classList.toggle(
+        'filtered-out',
+        !match
+      );
     });
   });
+});
+/* ---------- 15. GALLERY MODAL ---------- */
+const modal = document.getElementById('galleryModal');
+const modalVisual = document.getElementById('modalVisual');
+const modalTitle = document.getElementById('modalTitle');
+const modalCategory = document.getElementById('modalCategory');
+const modalDesc = document.getElementById('modalDesc');
+let lastFocused = null;
+const openModal = (item) => {
+  lastFocused = document.activeElement;
+  const visualEl = item.querySelector('.gallery-visual');
+  const img = item.querySelector('img');
+  modalVisual.className = 'modal-visual';
+  modalVisual.style.backgroundImage = '';
+  modalVisual.style.backgroundSize = '';
+  modalVisual.style.backgroundPosition = '';
+  if (
+    img &&
+    img.style.display !== 'none' &&
+    img.complete &&
+    img.naturalWidth > 0
+  ) {
+    modalVisual.style.backgroundImage =
+      `url("${img.currentSrc || img.src}")`;
 
-  /* ---------- 15. GALLERY MODAL ---------- */
-  const modal = document.getElementById('galleryModal');
-  const modalVisual = document.getElementById('modalVisual');
-  const modalTitle = document.getElementById('modalTitle');
-  const modalCategory = document.getElementById('modalCategory');
-  const modalDesc = document.getElementById('modalDesc');
-  let lastFocused = null;
-
-  const openModal = (item) => {
-    lastFocused = document.activeElement;
-    const visualEl = item.querySelector('.gallery-visual');
-    modalVisual.style.background = visualEl ? getComputedStyle(visualEl).backgroundImage !== 'none' ? getComputedStyle(visualEl).background : getComputedStyle(visualEl).background : '';
-    modalVisual.className = 'modal-visual';
-    const img = item.querySelector('img');
-    if(img && img.style.display !== 'none' && img.complete && img.naturalWidth > 0){
-      modalVisual.style.backgroundImage = `url(${img.src})`;
-      modalVisual.style.backgroundSize = 'cover';
-      modalVisual.style.backgroundPosition = 'center';
-    } else {
-      modalVisual.style.backgroundImage = '';
-      const visClass = Array.from(visualEl.classList).find(c => c.startsWith('gv-'));
-      if(visClass) modalVisual.classList.add(visClass);
+    modalVisual.style.backgroundSize = 'cover';
+    modalVisual.style.backgroundPosition = 'center';
+  } else {
+    if (visualEl) {
+      const computedStyle =
+        getComputedStyle(visualEl);
+      if (
+        computedStyle.backgroundImage &&
+        computedStyle.backgroundImage !== 'none'
+      ) {
+        modalVisual.style.backgroundImage =
+          computedStyle.backgroundImage;
+        modalVisual.style.backgroundSize = 'cover';
+        modalVisual.style.backgroundPosition = 'center';
+      }
+      const visualClass =
+        Array.from(visualEl.classList)
+          .find(c => c.startsWith('gv-'));
+      if (visualClass) {
+        modalVisual.classList.add(visualClass);
+      }
     }
-    modalTitle.textContent = item.dataset.title || '';
-    modalCategory.textContent = item.dataset.category || '';
-    modalDesc.textContent = item.dataset.desc || '';
-    modal.classList.add('open');
-    document.body.classList.add('no-scroll');
-    modal.querySelector('.modal-close').focus();
-  };
-  const closeModal = () => {
-    modal.classList.remove('open');
-    document.body.classList.remove('no-scroll');
-    if(lastFocused) lastFocused.focus();
-  };
-
-  galleryItems.forEach(item => {
-    item.addEventListener('click', () => openModal(item));
-    item.addEventListener('keydown', (e) => {
-      if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); openModal(item); }
-    });
+  }
+  modalTitle.textContent =
+    item.dataset.title || '';
+  modalCategory.textContent =
+    item.dataset.category || '';
+  modalDesc.textContent =
+    item.dataset.desc || '';
+  modal.classList.add('open');
+  document.body.classList.add('no-scroll');
+  const closeButton =
+    modal.querySelector('.modal-close');
+  if (closeButton) {
+    closeButton.focus();
+  }
+};
+const closeModal = () => {
+  modal.classList.remove('open');
+  document.body.classList.remove('no-scroll');
+  if (
+    lastFocused &&
+    typeof lastFocused.focus === 'function'
+  ) {
+    lastFocused.focus();
+  }
+};
+/* ---------- GALLERY ITEM EVENTS ---------- */
+galleryItems.forEach(item => {
+  item.addEventListener('click', () => {
+    openModal(item);
   });
-  modal.querySelectorAll('[data-modal-close]').forEach(el => el.addEventListener('click', closeModal));
-  document.addEventListener('keydown', (e) => {
-    if(e.key === 'Escape' && modal.classList.contains('open')) closeModal();
+  item.addEventListener('keydown', (e) => {
+    if (
+      e.key === 'Enter' ||
+      e.key === ' '
+    ) {
+      e.preventDefault();
+      openModal(item);
+    }
   });
-
+});
+/* ---------- MODAL CLOSE BUTTONS ---------- */
+modal
+  .querySelectorAll('[data-modal-close]')
+  .forEach(el => {
+    el.addEventListener(
+      'click',
+      closeModal
+    );
+  });
+/* ---------- ESCAPE KEY ---------- */
+document.addEventListener('keydown', (e) => {
+  if (
+    e.key === 'Escape' &&
+    modal.classList.contains('open')
+  ) {
+    closeModal();
+  }
+});
   /* ---------- 16. CONTACT FORM VALIDATION ---------- */
   const form = document.getElementById('contactForm');
   const formSuccess = document.getElementById('formSuccess');
-
   const validators = {
     name: (v) => v.trim().length >= 2 ? '' : 'Please enter your name.',
     email: (v) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()) ? '' : 'Please enter a valid email address.',
@@ -286,14 +351,12 @@ document.addEventListener('DOMContentLoaded', () => {
     requirement: (v) => v ? '' : 'Please select a requirement.',
     message: (v) => v.trim().length >= 10 ? '' : 'Please enter at least 10 characters.'
   };
-
   const showError = (name, message) => {
     const field = form.querySelector(`[name="${name}"]`)?.closest('.field');
     const errorEl = form.querySelector(`[data-error-for="f-${name}"]`);
     if(field) field.classList.toggle('error', !!message);
     if(errorEl) errorEl.textContent = message;
   };
-
   const validateField = (input) => {
     const validator = validators[input.name];
     if(!validator) return true;
@@ -301,11 +364,9 @@ document.addEventListener('DOMContentLoaded', () => {
     showError(input.name, message);
     return !message;
   };
-
   form.querySelectorAll('input, textarea, select').forEach(input => {
     input.addEventListener('blur', () => validateField(input));
   });
-
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
     let valid = true;

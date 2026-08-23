@@ -465,12 +465,11 @@
 
 <!-- ============ 03 GALLERY ============ -->
 <section class="gallery" id="gallery">
-  <div class="section-head">
-    <p class="eyebrow reveal-up"><span class="section-num">06</span> OUR WORK</p>
-    <h2 class="reveal-clip">BUILT. TESTED.<br>REFINED.</h2>
-    <p class="section-sub reveal-up">A visual glimpse into our world of robotics, electronics, prototyping and technology development.</p>
-  </div>
+  <div class="section-head"><p class="eyebrow reveal-up"><span class="section-num">06</span> OUR WORK</p>
+    <h2 class="reveal-clip">BUILT. TESTED.<br>REFINED.</h2><p class="section-sub reveal-up">A visual glimpse into our world of robotics, electronics,
+      IoT, AI, prototyping and technology development.</p></div>
 
+  <!-- FILTERS -->
   <div class="gallery-filters reveal-up" role="tablist" aria-label="Gallery filters">
     <button class="filter-btn active" data-filter="all">ALL</button>
     <button class="filter-btn" data-filter="robotics">ROBOTICS</button>
@@ -478,75 +477,257 @@
     <button class="filter-btn" data-filter="iot">IoT</button>
     <button class="filter-btn" data-filter="ai">AI</button>
     <button class="filter-btn" data-filter="prototypes">PROTOTYPES</button>
-    <button class="filter-btn" data-filter="3d">3D DESIGN</button>
-  </div>
-
+    <button class="filter-btn" data-filter="3d">3D DESIGN</button></div>
+  <!-- GALLERY -->
   <div class="gallery-grid" id="galleryGrid">
-    <!-- populated with figure.gallery-item elements below -->
-
-    <figure class="gallery-item size-lg" data-cat="robotics" tabindex="0" data-title="Agriculture Rover" data-category="Robotics" data-desc="An autonomous ground platform prototype built to explore terrain navigation and field-monitoring concepts for agricultural use cases.">
-      <div class="gallery-visual gv-robotics-1"><img src="assets/gallery/robotics-01.svg" alt="Agriculture Rover prototype" loading="lazy" onerror="this.onerror=null;this.src='assets/products/robotics-kit.svg'"></div>
-      <figcaption><span class="gi-title">AGRICULTURE ROVER</span><span class="gi-cat">Robotics</span></figcaption>
+    <!-- FEATURED PROJECT -->
+    <figure
+      class="gallery-item gallery-featured"
+      data-cat="robotics prototypes"
+      tabindex="0"
+      data-title="Agriculture Rover"
+      data-category="Robotics"
+      data-desc="An autonomous ground platform prototype built to explore terrain navigation and field-monitoring concepts for agricultural use cases.">
+      <div class="gallery-visual"><img src="assets/gallery/robotics-01.svg" alt="Agriculture Rover prototype" loading="lazy"></div>
+      <div class="gallery-overlay"></div><figcaption><span class="gi-number">01</span><div><span class="gi-title">AGRICULTURE ROVER</span><span class="gi-cat">Robotics / Prototype</span></div></figcaption>
+      <span class="gi-arrow">&rarr;</span></figure>
+    <!-- SMART IRRIGATION -->
+    <figure class="gallery-item" data-cat="iot prototypes" tabindex="0" data-title="Smart Irrigation System" data-category="IoT / Automation" data-desc="A connected irrigation prototype combining soil sensors and automated valve control for water-efficient field management.">
+      <div class="gallery-visual"><img src="assets/gallery/iot-01.svg" alt="Smart Irrigation System prototype" loading="lazy"></div>
+      <div class="gallery-overlay"></div>
+      <figcaption><span class="gi-number">02</span>
+        <div><span class="gi-title">SMART IRRIGATION</span><span class="gi-cat">IoT / Automation</span></div></figcaption>
       <span class="gi-arrow">&rarr;</span>
     </figure>
+    <!-- FLOOD MONITORING -->
+    <figure
+      class="gallery-item"
+      data-cat="iot prototypes"
+      tabindex="0"
+      data-title="Flood Monitoring System"
+      data-category="IoT"
+      data-desc="A water-level sensing and alert prototype designed to demonstrate real-time environmental monitoring over a connected network."
+    >
 
-    <figure class="gallery-item size-tall" data-cat="iot" tabindex="0" data-title="Smart Irrigation System" data-category="IoT / Automation" data-desc="A connected irrigation prototype combining soil sensors and automated valve control for water-efficient field management.">
-      <div class="gallery-visual gv-iot-1"><img src="assets/gallery/iot-01.svg" alt="Smart Irrigation System prototype" loading="lazy" onerror="this.onerror=null;this.src='assets/products/iot-board.svg'"></div>
-      <figcaption><span class="gi-title">SMART IRRIGATION SYSTEM</span><span class="gi-cat">IoT / Automation</span></figcaption>
+      <div class="gallery-visual">
+        <img
+          src="assets/gallery/iot-02.svg"
+          alt="Flood Monitoring System prototype"
+          loading="lazy"
+        >
+      </div>
+      <div class="gallery-overlay"></div>
+      <figcaption>
+        <span class="gi-number">03</span>
+        <div>
+          <span class="gi-title">
+            FLOOD MONITORING
+          </span>
+          <span class="gi-cat">
+            IoT / Monitoring
+          </span>
+        </div>
+      </figcaption>
       <span class="gi-arrow">&rarr;</span>
     </figure>
-
-    <figure class="gallery-item size-sq" data-cat="iot" tabindex="0" data-title="Flood Monitoring System" data-category="IoT" data-desc="A water-level sensing and alert prototype designed to demonstrate real-time environmental monitoring over a connected network.">
-      <div class="gallery-visual gv-iot-2"><img src="assets/gallery/iot-02.svg" alt="Flood Monitoring System prototype" loading="lazy" onerror="this.onerror=null;this.src='assets/illustrations/iot.svg'"></div>
-      <figcaption><span class="gi-title">FLOOD MONITORING SYSTEM</span><span class="gi-cat">IoT</span></figcaption>
+    <!-- SURVEILLANCE ROBOT -->
+    <figure
+      class="gallery-item"
+      data-cat="robotics prototypes"
+      tabindex="0"
+      data-title="Surveillance Robot"
+      data-category="Robotics / Embedded"
+      data-desc="A remotely operated embedded platform prototype exploring camera integration, wireless control and obstacle-aware movement.">
+      <div class="gallery-visual">
+        <img
+          src="assets/gallery/robotics-02.svg"
+          alt="Surveillance Robot prototype"
+          loading="lazy">
+      </div>
+      <div class="gallery-overlay"></div>
+      <figcaption>
+        <span class="gi-number">04</span>
+        <div>
+          <span class="gi-title">
+            SURVEILLANCE ROBOT
+          </span>
+          <span class="gi-cat">
+            Robotics / Embedded
+          </span>
+        </div>
+      </figcaption>
       <span class="gi-arrow">&rarr;</span>
     </figure>
-
-    <figure class="gallery-item size-wide" data-cat="robotics" tabindex="0" data-title="Surveillance Robot" data-category="Robotics / Embedded" data-desc="A remotely operated embedded platform prototype exploring camera integration, wireless control and obstacle-aware movement.">
-      <div class="gallery-visual gv-robotics-2"><img src="assets/gallery/robotics-02.svg" alt="Surveillance Robot prototype" loading="lazy" onerror="this.onerror=null;this.src='assets/illustrations/robotics.svg'"></div>
-      <figcaption><span class="gi-title">SURVEILLANCE ROBOT</span><span class="gi-cat">Robotics / Embedded</span></figcaption>
+    <!-- SMART FARM -->
+    <figure
+      class="gallery-item"
+      data-cat="electronics iot prototypes"
+      tabindex="0"
+      data-title="Smart Farm"
+      data-category="IoT / Electronics"
+      data-desc="A multi-sensor electronics prototype for monitoring temperature, humidity and light across a small-scale farming environment.">
+      <div class="gallery-visual">
+        <img
+          src="assets/gallery/electronics-01.svg"
+          alt="Smart Farm prototype"
+          loading="lazy">
+      </div>
+      <div class="gallery-overlay"></div>
+      <figcaption>
+        <span class="gi-number">05</span>
+        <div>
+          <span class="gi-title">
+            SMART FARM
+          </span>
+          <span class="gi-cat">
+            IoT / Electronics
+          </span>
+        </div>
+      </figcaption>
       <span class="gi-arrow">&rarr;</span>
     </figure>
-
-    <figure class="gallery-item size-sq" data-cat="electronics" tabindex="0" data-title="Smart Farm" data-category="IoT / Electronics" data-desc="A multi-sensor electronics prototype for monitoring temperature, humidity and light across a small-scale farming environment.">
-      <div class="gallery-visual gv-electronics-1"><img src="assets/gallery/electronics-01.svg" alt="Smart Farm prototype" loading="lazy" onerror="this.onerror=null;this.src='assets/illustrations/electronics.svg'"></div>
-      <figcaption><span class="gi-title">SMART FARM</span><span class="gi-cat">IoT / Electronics</span></figcaption>
+    <!-- RIVER CLEANING -->
+    <figure
+      class="gallery-item"
+      data-cat="robotics prototypes"
+      tabindex="0"
+      data-title="River Water Cleaning Robot"
+      data-category="Robotics"
+      data-desc="A floating robotic prototype concept aimed at collecting surface debris from small water bodies using a motorized collection mechanism.">
+      <div class="gallery-visual">
+        <img
+          src="assets/gallery/robotics-03.svg"
+          alt="River Water Cleaning Robot"
+          loading="lazy">
+      </div>
+      <div class="gallery-overlay"></div>
+      <figcaption>
+        <span class="gi-number">06</span>
+        <div>
+          <span class="gi-title">
+            RIVER CLEANING ROBOT
+          </span>
+          <span class="gi-cat">
+            Robotics / Environment
+          </span>
+        </div>
+      </figcaption>
       <span class="gi-arrow">&rarr;</span>
     </figure>
-
-    <figure class="gallery-item size-md" data-cat="robotics" tabindex="0" data-title="River Water Cleaning Robot" data-category="Robotics" data-desc="A floating robotic prototype concept aimed at collecting surface debris from small water bodies using a motorized collection mechanism.">
-      <div class="gallery-visual gv-robotics-3"><img src="assets/gallery/robotics-03.svg" alt="River Water Cleaning Robot prototype" loading="lazy" onerror="this.onerror=null;this.src='assets/illustrations/robotics.svg'"></div>
-      <figcaption><span class="gi-title">RIVER WATER CLEANING ROBOT</span><span class="gi-cat">Robotics</span></figcaption>
+    <!-- RFID -->
+    <figure
+      class="gallery-item"
+      data-cat="iot electronics prototypes"
+      tabindex="0"
+      data-title="RFID Smart Attendance"
+      data-category="IoT / RFID"
+      data-desc="A tag-based identification prototype demonstrating automated logging using RFID readers and a lightweight connected interface.">
+      <div class="gallery-visual">
+        <img
+          src="assets/gallery/iot-03.svg"
+          alt="RFID Smart Attendance"
+          loading="lazy">
+      </div>
+      <div class="gallery-overlay"></div>
+      <figcaption>
+        <span class="gi-number">07</span>
+        <div>
+          <span class="gi-title">
+            RFID ATTENDANCE
+          </span>
+          <span class="gi-cat">
+            IoT / RFID
+          </span>
+        </div>
+      </figcaption>
       <span class="gi-arrow">&rarr;</span>
     </figure>
-
-    <figure class="gallery-item size-md" data-cat="iot" tabindex="0" data-title="RFID Smart Attendance" data-category="IoT / RFID" data-desc="A tag-based identification prototype demonstrating automated logging using RFID readers and a lightweight connected interface.">
-      <div class="gallery-visual gv-iot-3"><img src="assets/gallery/iot-03.svg" alt="RFID Smart Attendance prototype" loading="lazy" onerror="this.onerror=null;this.src='assets/illustrations/iot.svg'"></div>
-      <figcaption><span class="gi-title">RFID SMART ATTENDANCE</span><span class="gi-cat">IoT / RFID</span></figcaption>
+    <!-- OBSTACLE ROBOT -->
+    <figure
+      class="gallery-item"
+      data-cat="robotics prototypes"
+      tabindex="0"
+      data-title="Obstacle Avoidance Robot"
+      data-category="Robotics"
+      data-desc="A sensor-driven mobile robot prototype that detects and navigates around obstacles using ultrasonic sensing and reactive control logic.">
+      <div class="gallery-visual">
+        <img
+          src="assets/gallery/robotics-04.svg"
+          alt="Obstacle Avoidance Robot"
+          loading="lazy">
+      </div>
+      <div class="gallery-overlay"></div>
+      <figcaption>
+        <span class="gi-number">08</span>
+        <div>
+          <span class="gi-title">
+            OBSTACLE AVOIDANCE
+          </span>
+          <span class="gi-cat">
+            Robotics / Embedded
+          </span>
+        </div>
+      </figcaption>
       <span class="gi-arrow">&rarr;</span>
     </figure>
-
-    <figure class="gallery-item size-lg" data-cat="robotics" tabindex="0" data-title="Obstacle Avoidance Robot" data-category="Robotics" data-desc="A sensor-driven mobile robot prototype that detects and navigates around obstacles using ultrasonic sensing and reactive control logic.">
-      <div class="gallery-visual gv-robotics-4"><img src="assets/gallery/robotics-04.svg" alt="Obstacle Avoidance Robot prototype" loading="lazy" onerror="this.onerror=null;this.src='assets/illustrations/robotics.svg'"></div>
-      <figcaption><span class="gi-title">OBSTACLE AVOIDANCE ROBOT</span><span class="gi-cat">Robotics</span></figcaption>
+    <!-- 3D -->
+    <figure
+      class="gallery-item"
+      data-cat="3d prototypes"
+      tabindex="0"
+      data-title="3D Prototype Components"
+      data-category="3D Design"
+      data-desc="A collection of CAD-modelled and 3D-printed mechanical components developed to support functional prototype assemblies.">
+      <div class="gallery-visual">
+        <img
+          src="assets/gallery/3d-01.svg"
+          alt="3D Prototype Components"
+          loading="lazy">
+      </div>
+      <div class="gallery-overlay"></div>
+      <figcaption>
+        <span class="gi-number">09</span>
+        <div>
+          <span class="gi-title">
+            3D PROTOTYPE COMPONENTS
+          </span>
+          <span class="gi-cat">
+            3D Design / Fabrication
+          </span>
+        </div>
+      </figcaption>
       <span class="gi-arrow">&rarr;</span>
     </figure>
-
-    <figure class="gallery-item size-wide" data-cat="3d" tabindex="0" data-title="3D Prototype Components" data-category="3D Design" data-desc="A collection of CAD-modelled and 3D-printed mechanical components developed to support functional prototype assemblies.">
-      <div class="gallery-visual gv-3d-1"><img src="assets/gallery/3d-01.svg" alt="3D Prototype Components" loading="lazy" onerror="this.onerror=null;this.src='assets/products/3d-component.svg'"></div>
-      <figcaption><span class="gi-title">3D PROTOTYPE COMPONENTS</span><span class="gi-cat">3D Design</span></figcaption>
+    <!-- AI -->
+    <figure
+      class="gallery-item"
+      data-cat="ai prototypes"
+      tabindex="0"
+      data-title="AI Vision Module"
+      data-category="AI"
+      data-desc="An edge-AI experimentation prototype exploring on-device object recognition paired with lightweight embedded hardware.">
+      <div class="gallery-visual">
+        <img
+          src="assets/gallery/ai-01.svg"
+          alt="AI Vision Module"
+          loading="lazy">
+      </div>
+      <div class="gallery-overlay"></div>
+      <figcaption>
+        <span class="gi-number">10</span>
+        <div>
+          <span class="gi-title">
+            AI VISION MODULE
+          </span>
+          <span class="gi-cat">
+            AI / Embedded
+          </span>
+        </div>
+      </figcaption>
       <span class="gi-arrow">&rarr;</span>
     </figure>
-
-    <figure class="gallery-item size-sq" data-cat="ai" tabindex="0" data-title="AI Vision Module" data-category="AI" data-desc="An edge-AI experimentation prototype exploring on-device object recognition paired with lightweight embedded hardware.">
-      <div class="gallery-visual gv-ai-1"><img src="assets/gallery/ai-01.svg" alt="AI Vision Module prototype" loading="lazy" onerror="this.onerror=null;this.src='assets/illustrations/ai.svg'"></div>
-      <figcaption><span class="gi-title">AI VISION MODULE</span><span class="gi-cat">AI</span></figcaption>
-      <span class="gi-arrow">&rarr;</span>
-    </figure>
-
   </div>
 </section>
-
 <!-- ============ 04 CONTACT ============ -->
 <section class="contact" id="contact">
   <div class="contact-bg" aria-hidden="true"></div>
@@ -555,14 +736,12 @@
       <p class="eyebrow reveal-up"><span class="section-num">07</span> WHAT WILL WE BUILD NEXT?</p>
       <h2 class="reveal-clip">LET'S BUILD<br><span class="accent-text">SOMETHING.</span></h2>
       <p class="contact-lead reveal-up">Have an idea, project or technology requirement? Let's turn it into something real.</p>
-
       <div class="contact-details reveal-up">
         <h3>PROTOLEAP INNOVATIONS LLP</h3>
         <p class="contact-tagline">From Prototype to Reality.</p>
         <a href="tel:+919747119885" class="contact-line"><span>PHONE</span>97471 19885</a>
         <a href="mailto:protoleapinnovations@gmail.com" class="contact-line"><span>EMAIL</span>protoleapinnovations@gmail.com</a>
       </div>
-
       <div class="social-row reveal-up">
         <a href="#" aria-label="Instagram" class="social-icon">
           <svg viewBox="0 0 24 24" width="20" height="20"><rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor"/></svg>
@@ -575,7 +754,6 @@
         </a>
       </div>
     </div>
-
     <form class="contact-form reveal-up" id="contactForm" novalidate>
       <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
       <input type="hidden" name="subject" value="New enquiry from ProtoLeap Innovations website">
