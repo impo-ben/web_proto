@@ -862,13 +862,38 @@ transition:transform .4s var(--ease-soft),border-color .35s ease,opacity .35s ea
 body.touch .cursor-dot,body.touch .cursor-ring{display:none;}
 
 /* 23. ANIMATIONS ------------------------------------------------------*/
-.reveal-up{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease), transform .8s var(--ease);}
-.reveal-up.in-view{opacity:1;transform:translateY(0);}
 
-.reveal-clip{display:block;overflow:hidden;}
-.reveal-clip > span, h1 .reveal-clip, h2.reveal-clip{position:relative;}
-.reveal-clip{clip-path:inset(0 0 100% 0);opacity:0;transform:translateY(30%);transition:clip-path .9s var(--ease), transform .9s var(--ease), opacity .3s;}
-.reveal-clip.in-view{clip-path:inset(0 0 0% 0);transform:translateY(0);opacity:1;}
+.reveal-up {
+  opacity: 0;
+  transform: translateY(26px);
+  transition:
+    opacity .8s var(--ease),
+    transform .8s var(--ease);
+}
+
+.reveal-up.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-clip {
+  display: block;
+  overflow: hidden;
+}
+
+.reveal-clip > span {
+  display: block;
+  opacity: 0;
+  transform: translateY(105%);
+  transition:
+    opacity .8s var(--ease),
+    transform .9s var(--ease);
+}
+
+.reveal-clip.in-view > span {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 [data-tilt]{transition:transform .25s var(--ease-soft);}
 
